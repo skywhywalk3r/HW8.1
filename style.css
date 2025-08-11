@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f7f7f7;
+    padding: 20px;
+}
+
+.week {
+    max-width: 400px;
+    margin: auto;
+}
+
+.day {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.day li {
+    padding: 10px;
+    border-bottom: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.day li:hover {
+    background: lightblue;
+}
+
+.day li:active {
+    background: orange;
+}
+
+.day li:first-child {
+    color: darkgreen;
+}
+
+.day li:last-child {
+    color: darkred;
+}
+
+.day li:nth-child(even) {
+    background: #f0f0f0;
+}
+
+.day:nth-of-type(1) li {
+    font-weight: bold;
+}
+
+.day:nth-of-type(2) li:nth-child(3) {
+    background: yellow;
+}
+
+.day:nth-of-type(3) li:nth-last-child(2) {
+    color: blue;
+}
+
+.day li:only-child {
+    background: pink;
+}
+
+.day li:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+}
